@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("/assets/img/main-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 644px;
+}
+
+.main .box {
+  height: 644px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+}
+
+nav {
+  max-width: 60vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+nav img {
+  color: red;
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.info {
+  color: white;
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  gap: 23px;
+  z-index: 10;
+  padding: 0 30px;
+}
+
+.info > :nth-child(1) {
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+}
+
+.info > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.info > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn {
+  padding: 3px 24px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.296);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.red-btn,
+.red-btn-sm {
+  background-color: red;
+}
+.red-btn {
+  font-size: 20px;
+}
+
+.info-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.main input {
+  padding: 9px 99px 9px 9px;
+  font-size: 12px;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: rgba(23, 23, 23, 0.9);
+  border: 2px solid rgba(237, 228, 228, 0.3);
+}
+.separation {
+  height: 5px;
+  background-color: rgb(85, 83, 83);
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+}
+
+.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+.first > div :nth-child(1) {
+  font-size: 37px;
+  font-weight: bolder;
+}
+.first > div :nth-child(2) {
+  font-size: 22px;
+  font-weight: 200;
+}
+.sec-img {
+  position: relative;
+}
+.sec-img img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+.sec-img video {
+  position: absolute;
+  top: 51px;
+  right: 0px;
+  width: 555px;
+}
+
+.faq {
+  background-color: black;
+  color: white;
+  padding: 34px;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+  padding: 14px;
+}
+.faqbox:hover {
+  background-color: #414141;
+}
+.faqbox {
+  display: flex;
+  background-color: #2d2d2d;
+  padding: 14px;
+  max-width: 60vw;
+  margin: 7px auto;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.getstarted > :first-child {
+  padding: 15px;
+}
+.getstarted .red-btn {
+  padding: 12px 24px;
+  font-weight: 700;
+}
+.getstarted input {
+  padding: 15px 350px 15px 9px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.getstarted {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-size: 15px;
+}
+
+footer {
+  color: white;
+  margin: auto;
+  max-width: 60vw;
+  padding: 34px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+  .first {
+    flex-wrap: wrap;
+  }
+  .sec-img img {
+    width: 305px;
+  }
+  .sec-img video {
+    width: 305px;
+  }
+
+  .info > :nth-child(1) {
+    font-size: 32px;
+  }
+  .info > :nth-child(2) {
+    font-size: 18px;
+  }
+  .info > :nth-child(3) {
+    font-size: 18px;
+  }
+}
