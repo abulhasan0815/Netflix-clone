@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-  background-image: url("assets/img/main-bg.jpg");
+  background-image: url("https://github.com/abulhasan0815/Netflix-clone/blob/main/assets/img/main-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: max(1200px, 100vw);
@@ -258,4 +258,5 @@ footer .questions {
     font-size: 18px;
   }
 }
+
 
